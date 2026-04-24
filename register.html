@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+
+<body style="display: grid; place-items: center; height: 30vh;">
+    <h1>Tela de Login</h1>
+
+    <form action="#" method="post">
+        <label for="nome">Nome completo:</label>
+        <input type="nome" id="nome" name="nome">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+
+        <label for="senha">Confirmar senha:</label>
+        <input type="password" id="passwordconfir" name="passwordconfir">
+        <br><br>
+
+        <label for="data">Data de nascimento:</label>
+        <input type="date" id="data" name="data">
+
+        <p>Gênero</p>
+        <input type="radio" name="genero" id="masc" value="masculino">
+        <label for="masc">Masculino</label>
+        <input type="radio" name="genero" id="fem" value="feminino">
+        <label for="fem">Feminino</label>
+        <input type="radio" name="genero" id="outro" value="outro">
+        <label for="outro">Outro</label>
+
+        <p>Interesses</p>
+        <input type="checkbox" name="interesses" id="tecnologia">
+        <label for="tecnologia">Tecnologia</label>
+        <input type="checkbox" name="interesses" id="esportes">
+        <label for="esportes">Esportes</label>
+        <input type="checkbox" name="interesses" id="musica">
+        <label for="musica">Música</label>
+
+        <p>País</p>
+        <select name="country" id="country">
+            <option value="1">Brasil</option>
+            <option value="2">Estados Unidos</option>
+            <option value="3">México</option>
+        </select>
+        <br><br>
+
+        <input type="checkbox" name="termos" id="termos">
+        <label for="termos">Aceito os termos de uso</label>
+        <br><br>
+    </form>
+
+    <button type="submit" style="text-decoration: none;">Criar conta</button>
+
+    <p><a href="login.html">Já tenho uma conta</a></p>
+
+    <button><a href="login.html" style="text-decoration: none;">Voltar para o Login</a></button>
+</body>
+
+</html>
