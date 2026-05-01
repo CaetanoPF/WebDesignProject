@@ -4,21 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Início</title>
 </head>
 
-<body style="display: grid; place-items: center; height: 30vh;">
-    <h1>Bem vindo à nossa aplicação!</h1>
-    <h4>Hello World! (não pode faltar, né?!)</h4>
+<body>
+    <div class="container">
+        <h1>Bem-vindo!</h1>
+        <p style="text-align: center; margin-bottom: 20px;">Hello World! (não pode faltar, né?!)</p>
 
-    <nav>
-        <ul>
-            <li><a href="https://github.com/CaetanoPF" target="_blank">Vai para um link externo!</a></li>
-            <li><a href="login.html">Fazer login na página</a></li>
-            <li><a href="beneficios.html">Porque aprender Web Design</a></li>
-            <li><a href="texto.html">Sobre mim</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <div class="campo">
+                <button onclick="location.href='login.html'">Fazer Login</button>
+            </div>
+
+            <div class="campo">
+                <button onclick="location.href='beneficios.html'">Por que aprender Web Design?</button>
+            </div>
+
+            <div class="campo">
+                <button onclick="location.href='texto.html'">Sobre mim</button>
+            </div>
+
+            <div class="campo">
+                <a href="https://github.com/CaetanoPF" target="_blank">Meu GitHub</a>
+            </div>
+        </nav>
+    </div>
 </body>
 
 </html>

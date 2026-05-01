@@ -4,66 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Registro</title>
 </head>
 
-<body style="display: grid; place-items: center; height: 30vh;">
-    <h1>Tela de Login</h1>
+<body>
 
-    <form action="#" method="post">
-        <label for="nome">Nome completo:</label>
-        <input type="nome" id="nome" name="nome">
-        <br><br>
+    <div class="container">
+        <h1>Criar Conta</h1>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-        <br><br>
+        <form action="#" method="post">
+            <div class="campo">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome">
+            </div>
 
-        <label for="senha">Senha:</label>
-        <input type="password" id="password" name="password">
-        <br><br>
+            <div class="campo">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
 
-        <label for="senha">Confirmar senha:</label>
-        <input type="password" id="passwordconfir" name="passwordconfir">
-        <br><br>
+            <div class="campo">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password">
+            </div>
 
-        <label for="data">Data de nascimento:</label>
-        <input type="date" id="data" name="data">
+            <div class="campo">
+                <label for="passwordconfir">Confirmar senha:</label>
+                <input type="password" id="passwordconfir" name="passwordconfir">
+            </div>
 
-        <p>Gênero</p>
-        <input type="radio" name="genero" id="masc" value="masculino">
-        <label for="masc">Masculino</label>
-        <input type="radio" name="genero" id="fem" value="feminino">
-        <label for="fem">Feminino</label>
-        <input type="radio" name="genero" id="outro" value="outro">
-        <label for="outro">Outro</label>
+            <div class="campo">
+                <label for="data">Data de nascimento:</label>
+                <input type="date" id="data" name="data">
+            </div>
 
-        <p>Interesses</p>
-        <input type="checkbox" name="interesses" id="tecnologia">
-        <label for="tecnologia">Tecnologia</label>
-        <input type="checkbox" name="interesses" id="esportes">
-        <label for="esportes">Esportes</label>
-        <input type="checkbox" name="interesses" id="musica">
-        <label for="musica">Música</label>
+            <div class="campo">
+                <p>Interesses</p>
+                <input type="checkbox" name="interesses" id="tecnologia">
+                <label for="tecnologia" style="display: inline;">Tecnologia</label>
+                <input type="checkbox" name="interesses" id="esportes">
+                <label for="esportes" style="display: inline;">Esportes</label>
+                <input type="checkbox" name="interesses" id="musica">
+                <label for="musica" style="display: inline;">Música</label>
+            </div>
 
-        <p>País</p>
-        <select name="country" id="country">
-            <option value="1">Brasil</option>
-            <option value="2">Estados Unidos</option>
-            <option value="3">México</option>
-        </select>
-        <br><br>
+            <div class="campo">
+                <p>Gênero</p>
+                <input type="radio" name="genero" id="masc" value="masculino">
+                <label for="masc" style="display: inline;">Masculino</label>
 
-        <input type="checkbox" name="termos" id="termos">
-        <label for="termos">Aceito os termos de uso</label>
-        <br><br>
-    </form>
+                <input type="radio" name="genero" id="fem" value="feminino">
+                <label for="fem" style="display: inline;">Feminino</label>
+            </div>
 
-    <button type="submit" style="text-decoration: none;">Criar conta</button>
+            <div class="campo">
+                <p>País</p>
+                <select name="country" id="country">
+                    <option value="1">Brasil</option>
+                    <option value="2">Estados Unidos</option>
+                    <option value="3">México</option>
+                </select>
+            </div>
 
-    <p><a href="login.html">Já tenho uma conta</a></p>
+            <div class="campo">
+                <input type="checkbox" name="termos" id="termos">
+                <label for="termos" style="display: inline;">Aceito os termos</label>
+            </div>
 
-    <button><a href="login.html" style="text-decoration: none;">Voltar para o Login</a></button>
+            <button type="submit">Criar conta</button>
+        </form>
+
+        <a href="login.html">Já tenho uma conta</a>
+        <a href="login.html">Voltar para o Login</a>
+    </div>
+
 </body>
 
 </html>
